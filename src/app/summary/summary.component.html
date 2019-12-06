@@ -1,0 +1,44 @@
+<table  style="width:100%" class="table table-hover table-dark"   >
+    <thead class="thead-dark">
+      <tr>
+        <th>Index</th>
+        <th scope="col" > Symbol</th>
+        <th scope="col" >quantity</th>
+        <th scope="col" >price</th>
+        <th scope="col"  >date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list;let i=index">
+        <td scope="row">{{i}}</td>
+        <td>{{ item.symbol }}</td>
+        <td>{{ item.quantity}}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.lastboughtdate }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<!-- <div>
+  <mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="Symbol">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Symbol</mat-header-cell>
+      <mat-cell *matCellDef="let summary">{{symbol}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="Quantity">
+        <mat-header-cell *matHeaderCellDef>Quantity</mat-header-cell>
+        <mat-cell *matCellDef="let summary">{{summary.quantity}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="price">
+          <mat-header-cell *matHeaderCellDef>Price</mat-header-cell>
+          <mat-cell *matCellDef="let summary">{{summary.symbol}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="date">
+            <mat-header-cell *matHeaderCellDef>Date</mat-header-cell>
+            <mat-cell *matCellDef="let summary">{{summary.date}}</mat-cell>
+          </ng-container>
+          <mat-header-row *matHeaderRowDef="displayedColumns" color="primary"></mat-header-row>
+          <mat-row *matRowDef="let row;columns : displayedColumns"></mat-row>
+  </mat-table>
+</div> -->

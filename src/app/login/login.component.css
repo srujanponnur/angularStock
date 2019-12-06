@@ -1,0 +1,9 @@
+.bpos{
+  position: relative;
+  top: -10px;
+}
+
+.btnalign{
+  position: relative;
+  bottom: -10px;
+}
